@@ -1,0 +1,6 @@
+1.
+D = (not A and C)
+E = (D or B)
+F = (E and D)
+
+2.

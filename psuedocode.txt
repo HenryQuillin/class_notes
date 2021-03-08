@@ -1,0 +1,8 @@
+       TARGET MIN HIGH FOUND ANSWER MID OUTPUT 
+I.S      15    0   7   true    0    0     - 
+1                                   3.5 
+2
+3
+4       
+
+MID=int = int(MID) 

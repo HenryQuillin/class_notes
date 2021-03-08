@@ -1,0 +1,51 @@
+Henry Quillin 
+Mr. Beradino 
+3/3/2021 
+
+(A): 90.2 
+(B): 
+
+RADIO = Array 
+INPUT = input(enter an integer from 1 - 6)
+FREQUENCY_TO_STRING(INPUT):
+	FREQ_TO_STR = RADIO(INPUT)
+	FREQ_TO_STR = str(FREQ_TO_STR)
+	return FREQ_TO_STR 
+
+
+(C): 
+
+RADIO = Array 
+RANGE_OF_RADIO(RADIO):
+	MIN_FREQ = RADIO[I]
+	MAX_FREQ = 0 
+	I = 0 
+	loop I from 0 to 5
+		if RADIO[I] < MIN_FREQ then 
+			MIN_FREQ = RADIO[I]
+		else if RADIO[I] > MAX_FREQ then 
+			MAX_FREQ = RADIO[I]  
+		end if 
+	end loop 
+	RANGE = MAX_FREQ - MIN_FREQ
+	return RANGE 
+
+Working Python Code: 
+radio = [80.4,88.7,90.2,104.5,93.8,100.2] 
+
+def RANGE_OF_RADIO(RADIO):
+	MIN_FREQ = RADIO[0]
+	MAX_FREQ = 0 
+	for I in range(6):
+		if RADIO[I] < MIN_FREQ: 
+			MIN_FREQ = RADIO[I]  
+		elif RADIO[I] > MAX_FREQ: 
+			MAX_FREQ = RADIO[I] 
+		print(MIN_FREQ)
+		print(MAX_FREQ)
+
+	RANGE = MAX_FREQ - MIN_FREQ
+	return RANGE 
+
+print(RANGE_OF_RADIO(radio))
+
