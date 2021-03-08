@@ -1,6 +1,29 @@
 1.
-D = (not A and C)
-E = (D or B)
-F = (E and D)
+ D = (not A and C) 
+ E = (D or B)
+ F = (E and D)
 
-2.
+A B C D=(not A and C) E = (D or B) F = (E and D)
+0 0 0 0               0            0
+0 0 1 1               1            1
+0 1 0 0               1            0
+0 1 1 1               1            1
+1 0 0 0               0            0
+1 0 1 0               0            0
+1 1 1 0               1            0
+
+
+
+2. 
+ D = (A or notB)
+ E = (C and notD)
+ F = (E nor B)
+
+A B C D=(A or notB)   E = (C and notD) F = (E nor B)
+0 0 0 1               0                1
+0 0 1 1               0                1
+0 1 0 0               0                0
+0 1 1 0               1                0
+1 0 0 1               0                1
+1 0 1 1               0                1
+1 1 1 1               0                0   
